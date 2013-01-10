@@ -23,8 +23,8 @@ spl_autoload_register(function($className)
 //
 
 $generator = new Stats\Generator(array(
-	// new Stats\Stat\CowBiomass(),
-	new Stats\Stat\Population()
+	new Stats\Stat\Biomass(),
+	// new Stats\Stat\Population()
 ));
 
 $generator->original_stat($_GET['users'], 'Users Online');
