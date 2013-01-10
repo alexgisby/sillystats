@@ -20,11 +20,11 @@ abstract class Base
 	/**
 	 * Maginitude types
 	 */
-	const MAG_TENS = 10;
-	const MAG_HUNDREDS = 100;
-	const MAG_THOUSANDS = 1000;
-	const MAG_MILLIONS = 1000000;
-	const MAG_BILLIONS = 1000000000;
+	const MAG_TENS = 99;
+	const MAG_HUNDREDS = 999;
+	const MAG_THOUSANDS = 999999;
+	const MAG_MILLIONS = 999999999;
+	const MAG_BILLIONS = 999999999999;
 
 	/**
 	 * Stats must implement this to say which amounts they support.

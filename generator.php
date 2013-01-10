@@ -23,7 +23,7 @@ spl_autoload_register(function($className)
 //
 
 $generator = new Stats\Generator(array(
-	new Stats\Stat\CowBiomass(),
+	// new Stats\Stat\CowBiomass(),
 	new Stats\Stat\Population()
 ));
 
