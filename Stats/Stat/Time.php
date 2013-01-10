@@ -22,7 +22,7 @@ class Time extends Base
 		$tasks = array(
 			'Walk around the Earth' => (833.333 * 24 * 60),
 			'Read all of Shakespear' => (884421 * $words_per_minute),
-			'Read all of Wikipedia' => (1798000000 * $words_per_minute),
+			// 'Read all of Wikipedia' => (1798000000 * $words_per_minute),
 		);
 
 		// Work out how many times they could accomplish this:
