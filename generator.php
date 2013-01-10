@@ -22,13 +22,27 @@ spl_autoload_register(function($className)
 // -------------- END SETUP ---------------
 //
 
-$generator = new Stats\Generator(array(
-	new Stats\Stat\Biomass(),
-	// new Stats\Stat\Population()
-));
+$stats = array();
+if(isset($_GET['stats']))
+{
+	$exploded = explode(',', $_GET['stats']);
+	foreach($exploded as $class)
+	{
+		$class = 'Stats\Stat\\' . $class;
+		$stats[] = new $class();
+	}
+}
+else
+{
+	$stats = array(
+		// new Stats\Stat\Biomass(),
+		// new Stats\Stat\Population(),
+		new Stats\Stat\Time()
+	);
+}
 
+$generator = new Stats\Generator($stats);
 $generator->original_stat($_GET['users'], 'Users Online');
-
 $stat = $generator->random_stat();
 
 if($stat)
