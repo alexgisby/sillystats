@@ -35,8 +35,8 @@ if(isset($_GET['stats']))
 else
 {
 	$stats = array(
-		// new Stats\Stat\Biomass(),
-		// new Stats\Stat\Population(),
+		new Stats\Stat\Biomass(),
+		new Stats\Stat\Population(),
 		new Stats\Stat\Time()
 	);
 }

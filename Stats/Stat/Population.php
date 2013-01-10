@@ -60,7 +60,8 @@ class Population extends Base
 
 		return array(
 			'country' => $country,
-			'under_or_over' => $under_or_over
+			'under_or_over' => $under_or_over,
+			'unit' => 'People',
 		);
 	}
 }

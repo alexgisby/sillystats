@@ -41,6 +41,7 @@ class Biomass extends Base
 			'animal_count' => $animal_count,
 			'animal_weight' => $animal_weight,
 			'human_weight_total' => $human_weight_total,
+			'unit' => $rand_key
 		);
 	}
 }
